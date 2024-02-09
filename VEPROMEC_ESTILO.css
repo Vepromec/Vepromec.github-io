@@ -1,0 +1,616 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para el encabezado */
+header {
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    color: #fff;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Estilos para el logo */
+.logo {
+    display: block;
+    flex: 1;
+    max-width: 300px; /* Tamaño máximo del logo */
+    text-align: center;
+}
+
+.logo img {
+    width: 100%; /* Ajusta el ancho del logo al 100% del contenedor */
+    max-height: 300px; /* Altura máxima del logo */
+}
+.icon-menu{
+    display:none;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin-right: 20px;
+}
+
+nav ul.menu li a {
+    font-size: 27px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: aqua; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+
+
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.inicio {
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.inicio .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inicio h1 { 
+    font-size: 45px;
+    color: black;
+}
+
+.inicio p { 
+    font-size: 20px;
+    color: black;
+}
+
+.acerca {
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.acerca .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acerca h2 {
+    font-size: 45px;
+    color: black;
+}
+.acerca p{
+    font-size: 20px;
+}
+.servicios {
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.servicios .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servicios h2 {
+    font-size: 45px;
+    color: black;
+}
+
+.servicios ul {
+    font-size: 20px;
+    list-style: disc;
+}
+
+.contacto {
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contacto .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    font-size: 45px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* Estilos para el formulario de contacto */
+.contacto form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: gray;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%; /* Haz que los campos de entrada ocupen el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.contacto button {
+    background-color: #575656;
+    color: gainsboro;
+    border: none;
+    padding: 10px 20px; /* Ajusta el padding para que sea más compacto */
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contacto button:hover {
+    background-color: green;
+}
+
+/* Estilos específicos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .contacto form {
+        max-width: 80%; /* Hacer que el formulario ocupe el 100% del ancho en pantallas más pequeñas */
+        padding: 15px; /* Reducir el padding del formulario */
+    }
+
+    .contacto label {
+        margin-top: 15px; /* Reducir el espacio entre las etiquetas */
+    }
+
+    .contacto input,
+    .contacto textarea {
+        width: calc(100% - 70px); /* Reducir el ancho de los campos de entrada */
+        margin-top: 5px;
+        padding: 15px; /* Reducir el padding de los campos de entrada */
+    }
+
+    .contacto button {
+        padding: 20px 50px; /* Reducir el padding del botón */
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilos para los íconos de redes sociales */
+.redes-sociales {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 15px;
+    transition: transform 0.2s; /* Agrega una transición para la animación */
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.4); /* Aumenta el tamaño al pasar el puntero por encima */
+}
+
+.redes-sociales img {
+    width: 60px; /* Ajusta el tamaño de los íconos según tus preferencias */
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/* Estilos para los enlaces */
+.redes-sociales a {
+    text-decoration: none;
+    color: #61427c; /* Color del ícono cuando no se pasa el puntero */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos de FUENTES */
+
+@font-face {
+    font-family: 'Fatal Fighter';
+    src: url('fatal_fighter/Fatal Fighter.otf') format('opentype');
+    /* Otras fuentes y formatos de fuente aquí */
+}
+
+@font-face {
+    font-family: 'REPUBLIC NICE';
+    src: url('republic_nine/REPUBLIC NINE.otf') format('opentype');
+    /* Otras fuentes y formatos de fuente aquí */
+}
+@font-face {
+    font-family: 'Random Quotes';
+    src: url('random_quotes/Random\ quotes.ttf') format('opentype');
+    /* Otras fuentes y formatos de fuente aquí */
+}
+@font-face {
+    font-family: 'designer_2';
+    src: url('designer_2/') format('opentype');
+    /* Otras fuentes y formatos de fuente aquí */
+}
+
+h1,h2{
+    font-family: 'Fatal Fighter', sans-serif;
+    text-align: center;
+}
+
+.menu{
+    font-family: 'Random Quotes', sans-serif;    
+}
+
+
+
+
+
+
+
+/* Estilos generales para el mapa */
+.mapouter {
+    position: relative;
+    text-align: center;
+    margin: 10% auto; /* Centra verticalmente y ajusta el margen horizontal según sea necesario */
+    border-radius: 10px;
+    max-width: 800px; /* Establece el ancho máximo del contenedor del mapa */
+}
+
+.mapouter iframe {
+    width: 100%; /* Hace que el mapa ocupe el 100% del ancho del contenedor */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    border: none; /* Elimina el borde del iframe */
+}
+
+/* Estilos específicos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 468px) {
+    .mapouter {
+        margin: 5% auto; /* Ajusta el margen y centra el mapa horizontalmente */
+        max-width: 90%; /* Ajusta el ancho máximo del mapa para que no sea demasiado ancho en pantallas pequeñas */
+        overflow: hidden; /* Evita que el contenido que excede el tamaño del contenedor sea visible */
+        background-color: #f1f1f1; /* Cambia el color de fondo del contenedor del mapa */
+        border-radius: 10px; /* Agrega esquinas redondeadas al contenedor del mapa */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al contenedor del mapa */
+    }
+
+    .mapouter iframe {
+        width: 100%; /* Hace que el mapa ocupe el 100% del ancho del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales para el carrusel de características */
+.slider-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos específicos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 468px) {
+    .slider {
+        margin-bottom: -70px; /* Ajusta el margen inferior del contenedor del slider para estirarlo hacia abajo */
+    }
+
+    .slider img {
+        max-width: 100%; /* Ajusta el ancho de la imagen para dispositivos móviles (puedes ajustar el valor según tus necesidades) */
+        display: block; /* Hace que la imagen sea un elemento de bloque para poder centrarla verticalmente */
+        margin: -20px auto; /* Centra la imagen horizontalmente */
+        height: 310px;
+    }
+}
+
+
+
+
+  
+
+
+/*responsive*/
+  
+  .logo img {
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    opacity: 1; /* Inicialmente muestra la imagen */
+    transition: opacity 0.5s ease-in-out; /* Agrega una transición de opacidad */
+  }
+  
+  .menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px; /* Espaciado entre elementos */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+  }
+  
+  .icon-menu {
+    display: none; /* Oculta el ícono de menú en pantallas grandes */
+  }
+  
+  
+/* Estilos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 468px) {
+    .logo {
+        display: none; /* Oculta el logo en pantallas pequeñas */
+    }
+
+    .menu {
+        text-align: center; /* Centra el texto dentro de los elementos del menú */
+        padding: 20px; /* Añade espacio alrededor del menú en pantallas pequeñas */
+        display: flex;
+        flex-direction: column; /* Cambia a disposición de columna */
+        align-items: center; /* Centra horizontalmente los elementos del menú */
+        justify-content: center; /* Centra verticalmente los elementos del menú */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        margin-left: 37px; /* Mueve la columna del menú hacia la derecha */
+    }
+
+    .menu li {
+        margin: 15px 0; /* Espaciado entre elementos en pantalla pequeña */
+    }
+
+    .icon-menu {
+        display: block; /* Muestra el ícono de menú en pantallas pequeñas */
+        cursor: pointer; /* Indica que es interactivo */
+        margin-bottom: 20px; /* Añade espacio debajo del ícono de menú */
+    }
+
+    .menu a {
+        font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Elimina la decoración de enlace */
+        padding: 10px; /* Añade espacio alrededor del texto del enlace */
+        border-radius: 5px; /* Borde redondeado */
+    }
+}
+
+
+
+  
+  /* Estilos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 468px) {
+    /* Ajusta el tamaño del mapa según sea necesario para dispositivos móviles */
+    .mapouter iframe {
+        width: 100%; /* Hace que el mapa ocupe el 100% del ancho del contenedor */
+        height: 200px; /* Ajusta la altura según sea necesario */
+    }
+
+    /* Otros ajustes si es necesario */
+}
+
+
+/* ... (otros estilos) ... */
+
+/* Estilos para pantallas más pequeñas (ej. dispositivos móviles) */
+@media screen and (max-width: 468px) {
+    /* Ajusta el tamaño del texto según sea necesario para dispositivos móviles */
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /* Ajusta el tamaño del texto en otras secciones si es necesario */
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 10px;
+    }
+
+    /* Repite el proceso para otras secciones y etiquetas de texto */
+    
+    .acerca h2 {
+        font-size: 30px;
+    }
+
+    .servicios h2 {
+        font-size: 30px;
+    }
+
+    .servicios ul {
+        font-size: 14px;
+    }
+
+    .contacto h2 {
+        font-size: 30px;
+    }
+
+    /* Ajusta el tamaño del texto en otras secciones si es necesario */
+
+    .contacto form label {
+        font-size: 17px;
+    }
+    
+    h4{
+        font-size: 15px;
+    }
+    /* ... (otros ajustes de tamaño de texto) ... */
+}
+
+h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+#servicios a {
+    text-decoration: none;
+}
+
+#servicios h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border 0.3s ease, color 0.3s ease;
+}
+
+#servicios h3:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: red;
+}
+#servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 468px) {
+    h3 {
+        border-bottom: none;
+    }
+
+    #servicios h3 {
+        border: 1px solid transparent;
+        transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #servicios h3:hover {
+        border: 1px solid black;
+        color: red;
+    }
+}
+#servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
